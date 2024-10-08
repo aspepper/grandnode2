@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ${{github.workspace}}/publish_output
+          path: ${{github.workspace}}\publish_output
 
   deploy:
     runs-on: windows-latest
@@ -61,5 +61,5 @@ jobs:
         with:
           app-name: 'nowshopping'
           slot-name: 'Production'
-          package: ${{github.workspace}}/publish_output
+          package: ${{github.workspace}}\publish_output
           

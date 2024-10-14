@@ -61,5 +61,5 @@ jobs:
         with:
           app-name: 'nowshopping'
           slot-name: 'Production'
-          package: ./publish_output
+          package: ${{github.workspace}}/publish_output
           
